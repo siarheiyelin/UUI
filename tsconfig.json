@@ -1,40 +1,45 @@
 {
-    "compilerOptions": {
-        "allowSyntheticDefaultImports": true,
-        "module": "commonjs",
-        "target": "ES6",
-        "declaration": false,
-        "declarationMap": false,
-        "noImplicitAny": true,
-        "noImplicitThis": true,
-        "strictNullChecks": false,
-        "strictFunctionTypes": true,
-        "removeComments": false,
-        "preserveConstEnums": true,
-        "sourceMap": true,
-        "noEmitOnError": true,
-        "jsx": "react",
-        "outDir": "./build",
-        "rootDir": ".",
-        "importHelpers": true,
-        "esModuleInterop": true,
-        "paths": {
-            "@epam/test-utils": [
-              "test-utils"
-            ]
-        },
-      "baseUrl": "."
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": false,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "noEmit": false,
+    "allowSyntheticDefaultImports": true,
+    "module": "commonjs",
+    "target": "ES6",
+    "declaration": true,
+    "declarationMap": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": false,
+    "strictFunctionTypes": true,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "noEmitOnError": true,
+    "jsx": "react",
+    "outDir": "./build",
+    "rootDir": ".",
+    "importHelpers": true,
+    "esModuleInterop": true,
+    "paths": {
+      "@epam/test-utils": [
+        "test-utils"
+      ]
     },
-    "exclude": [
-        "node_modules",
-        "built",
-        "build",
-        "**/build",
-        "webpack",
-        "jest",
-        "templates",
-        "*/**/__tests__",
-        "*/**/globals.d.ts",
-        "./next-app"
-    ]
+    "baseUrl": "."
+  },
+  "exclude": [
+    "node_modules",
+    "built",
+    "build",
+    "**/build",
+    "webpack",
+    "jest",
+    "templates",
+    "*/**/__tests__",
+    "*/**/globals.d.ts",
+    "./next-app"
+  ]
 }

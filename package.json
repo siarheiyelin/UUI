@@ -3,7 +3,7 @@
   "private": true,
   "version": "2.1.434",
   "description": "",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
     "analyzer": "webpack-bundle-analyzer app/build/bundle-stats.json",
     "postinstall": "cd server && yarn",
@@ -15,6 +15,8 @@
     "build": "cd ./app && yarn build --stats",
     "build-dev": "cd ./app && yarn build-dev",
     "start-server": "cd ./app && yarn server",
+    "dev": "node uui-build/scripts/runDev.mjs",
+    "dev-brk": "node --inspect-brk uui-build/scripts/runDev.mjs",
     "lint": "npx tslint -p ./tsconfig.json -e node_modules",
     "style-lint": "npx stylelint \"**/*.{scss,less}\"\n",
     "format": "npx tslint -p ./tsconfig.json --fix -e node_modules",
@@ -23,7 +25,7 @@
     "generate-components-api": "cd uui-build && yarn generate-components-api",
     "transform-tokens": "tsc --esModuleInterop uui-build/tokens-converter/index.ts && node uui-build/tokens-converter",
     "release": "lerna publish --force-publish",
-    "build-modules": "learn run build"
+    "build-modules": "lerna run build"
   },
   "repository": {
     "type": "git",
@@ -60,7 +62,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "lerna": "3.22.1",
+    "lerna": "6.0.3",
     "tslib": "^2.3.1",
     "cross-env": "^7.0.3",
     "typedoc": "0.17.4"

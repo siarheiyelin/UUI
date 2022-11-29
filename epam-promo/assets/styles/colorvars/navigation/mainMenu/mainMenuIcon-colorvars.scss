@@ -1,4 +1,4 @@
-@use  '../../../colors' as *;
+@use '../../../colors' as *;
 
 @mixin mainMenu-icon-color() {
     --background-color-hover: #{$gray90};

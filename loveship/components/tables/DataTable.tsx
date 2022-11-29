@@ -3,9 +3,9 @@ import { ColumnsConfig, DataRowProps, useUuiContext, uuiScrollShadows, useColumn
     DataColumnProps, DataTableState, DataSourceListProps, DataTableColumnsConfigOptions,
     TableFiltersConfig, DataTableRowProps } from '@epam/uui-core';
 import { PositionValues, useColumnsWithFilters, VirtualListRenderRowsParams } from '@epam/uui-components';
-import { ColumnsConfigurationModal, DataTableHeaderRow, DataTableRow, DataTableMods } from './';
-import { IconButton, Text, VirtualList } from '../';
-import * as css from './DataTable.scss';
+import { ColumnsConfigurationModal, DataTableHeaderRow, DataTableRow, DataTableMods } from './index';
+import { IconButton, Text, VirtualList } from '../index';
+import css from './DataTable.scss';
 import { ReactComponent as SearchIcon } from '../icons/search-24.svg';
 
 export interface DataTableProps<TItem, TId>

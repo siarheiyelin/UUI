@@ -1,4 +1,4 @@
-import { VerticalTabButton, TabButtonMods } from '../';
+import { VerticalTabButton, TabButtonMods } from '../index';
 import { DocBuilder } from '@epam/uui-docs';
 import { ButtonProps } from '@epam/uui-components';
 import { onClickDoc, dropdownTogglerDoc, isDisabledDoc, basicPickerTogglerDoc, iCanRedirectDoc, iconDoc, iconOptionsDoc } from '../../../docs';
@@ -17,4 +17,4 @@ const TabButtonDoc = new DocBuilder<TabButtonMods & ButtonProps>({ name: 'TabBut
     .prop('theme', { examples: (['light', 'dark']), defaultValue: 'light' })
     .withContexts(VerticalTabButtonContext);
 
-export = TabButtonDoc;
+export default TabButtonDoc;

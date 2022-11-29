@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Manager, Reference, Popper, PopperChildrenProps } from 'react-popper';
 import { uuiElement, LayoutLayer, closest, cx, useUuiContext, TooltipCoreProps } from '@epam/uui-core';
 import { Portal } from './Portal';
-import * as css from './Tooltip.scss';
+import css from './Tooltip.scss';
 import { useCallback } from "react";
 import PopoverArrow from "./PopoverArrow";
 
@@ -129,6 +129,7 @@ export function Tooltip(props: TooltipProps) {
                 { ({ ref }) => React.Children.map(props.children, (child, idx) => {
                     if (idx > 0 || !React.isValidElement(child)) return child;
                     return React.cloneElement(child, {
+                        // @ts-ignore
                         ref: (node: HTMLElement) => getInnerRef(node, ref),
                     });
                 }) }

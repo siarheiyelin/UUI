@@ -1,4 +1,4 @@
-import * as css from './DatePicker.scss';
+import css from './DatePicker.scss';
 import * as rangeCss from './RangeDatePickerBody.scss';
 import * as calendarCss from './Calendar.scss';
 import * as calendarPresetsCss from './CalendarPresets.scss';

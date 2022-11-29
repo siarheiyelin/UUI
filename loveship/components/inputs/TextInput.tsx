@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as types from '../types';
-import * as css from './TextInput.scss';
+import css from './TextInput.scss';
 import * as colorStyle from '../../assets/styles/scss/loveship-color-vars.scss';
 import { withMods, IEditableDebouncer, IEditableDebouncerOptions } from '@epam/uui-core';
 import { TextInput as uuiTextInput, TextInputProps } from '@epam/uui-components';

@@ -1,5 +1,5 @@
-@use './colors' as *;
-@use './fonts.scss' as *;
+@use 'colors' as *;
+@use 'fonts' as *;
 
 @mixin disabled-input() {
     &.mode-form {

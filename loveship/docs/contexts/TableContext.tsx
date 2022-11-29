@@ -2,8 +2,7 @@ import React from 'react';
 import { DemoComponentProps, demoData } from '@epam/uui-docs';
 import { ArrayDataSource, DataColumnProps, Metadata } from '@epam/uui-core';
 import { Panel, DataTable, DataTableCell, useForm, FlexRow, Button, FlexSpacer, FlexCell } from '../../components';
-import { Text } from "@epam/promo";
-
+import { Text } from "@epam/uui-components";
 
 interface Person {
     id: number;
@@ -37,7 +36,7 @@ const metadata: Metadata<FormState> = {
             },
         },
     },
-};
+};;
 
 let savedValue: FormState = { items: {} };
 

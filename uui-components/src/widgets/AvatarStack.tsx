@@ -2,8 +2,8 @@ import * as React from 'react';
 import cx from 'classnames';
 import { IHasCX, IHasRawProps } from '@epam/uui-core';
 import { Avatar } from './Avatar';
-import { FlexRow } from '../';
-import * as css from './AvatarStack.scss';
+import { FlexRow } from '../index';
+import css from './AvatarStack.scss';
 
 export interface AvatarStackProps extends IHasCX, IHasRawProps<React.HTMLAttributes<HTMLDivElement>> {
     avatarSize: '24' | '36' | '48' | '144';
@@ -18,10 +18,11 @@ export const AvatarStack = React.forwardRef<HTMLDivElement, AvatarStackProps>((p
 
     const firstElements = avatarsCount && (urlArray.length > avatarsCount) ? urlArray.slice(0, avatarsCount) : urlArray;
 
+    const s: any = {['--overlap']: `-${ +avatarSize / 4 }px`};
     return (
         <FlexRow cx={ props.cx } ref={ ref } rawProps={ props.rawProps }>
             <FlexRow
-                rawProps={ { role:'group', style: { ['--overlap']: `-${ +avatarSize / 4 }px` } } }
+                rawProps={ { role:'group', style: s } }
                 cx={ cx('avatars', css.container, css['avatar-' + direction]) }
             >
                 { firstElements.map((avatar, index) => {

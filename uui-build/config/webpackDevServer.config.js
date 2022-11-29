@@ -7,11 +7,22 @@ const ignoredFiles = require('react-dev-utils/ignoredFiles');
 const getWebpackConfig = require('./webpack.config');
 const paths = require('./paths');
 const fs = require('fs');
+const path = require('path');
+const {PackageGraph} = require("@lerna/package-graph");
+const Project = require("@lerna/project");
 
 const webpackConfig = getWebpackConfig({ env: 'development' });
 
 const protocol = process.env.HTTPS === 'true' ? 'https' : 'http';
 const host = process.env.HOST || '0.0.0.0';
+
+function getWatchIgnored() {
+    //return ignoredFiles(paths.appSrc)
+    return new RegExp(
+        `.+\/node_modules\/(?!@epam\/).+`,
+        'g'
+    );
+}
 
 module.exports = function(proxy, allowedHost) {
   return {
@@ -66,13 +77,13 @@ module.exports = function(proxy, allowedHost) {
     publicPath: webpackConfig.output.publicPath,
     // WebpackDevServer is noisy by default so we emit custom message instead
     // by listening to the compiler events with `compiler.hooks[...].tap` calls above.
-    quiet: false,
+    quiet: true,
     // Reportedly, this avoids CPU overload on some systems.
     // https://github.com/facebook/create-react-app/issues/293
     // src/node_modules is not ignored to support absolute imports
     // https://github.com/facebook/create-react-app/issues/1065
     watchOptions: {
-      ignored: ignoredFiles(paths.appSrc),
+        ignored: getWatchIgnored(),
     },
     // Enable HTTPS if the HTTPS environment variable is set to 'true'
     https: protocol === 'https',

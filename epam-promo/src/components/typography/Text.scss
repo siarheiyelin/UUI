@@ -1,0 +1,9 @@
+@use '../../../assets/styles/index' as *;
+@use '../../../assets/styles/colorvars/typography/text-colorvars' as *;
+
+.root {
+    @include epam-uui-fonts();
+    @include typography-inline();
+    color: var(--color);
+}
+

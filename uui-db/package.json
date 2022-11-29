@@ -4,10 +4,10 @@
   "description": "UUI - client-side relational state cache",
   "author": "EPAM",
   "license": "MIT",
-  "main": "index.js",
-  "typings": "index.d.ts",
+  "main": "build/index.js",
+  "typings": "build/index.d.ts",
   "scripts": {
-    "build": "node ../uui-build/scripts/buildModule",
+    "build": "node ../uui-build/scripts/buildModule.mjs",
     "perf": "npx ts-node -T ./src/__benchmarks__/index.ts",
     "perf-prof": "node -r ts-node/register/transpile-only --prof ./src/__benchmarks__/index.ts",
     "prepublish": "yarn build"
@@ -58,9 +58,7 @@
     "react": ">=16.0.0",
     "react-dom": ">=16.0.0"
   },
-  "optionalDependencies": {
-    "@epam/uui-docs": "4.9.0"
-  },
+
   "repository": {
     "type": "git",
     "url": "https://github.com/epam/UUI"

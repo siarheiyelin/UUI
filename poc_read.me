@@ -1,0 +1,8 @@
+To make it work:
+1) modify node_modules/@rollup/plugin-typescript/dist/es/index.js
+```
+            //if (this.meta.watchMode !== true) {
+            if (true) {
+```
+
+2) yarn run dev

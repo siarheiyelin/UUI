@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@epam/assets": "4.9.0",
+    "@epam/draft-rte": "*",
     "@epam/internal": "0.0.1",
     "@epam/loveship": "4.9.0",
     "@epam/promo": "4.9.0",

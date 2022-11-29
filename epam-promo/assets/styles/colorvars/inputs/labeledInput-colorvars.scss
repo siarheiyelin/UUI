@@ -1,4 +1,4 @@
-@use  '../../colors' as *;
+@use '../../colors' as *;
 
 @mixin labeled-input-color() {
     --color: #{$gray80};

@@ -1,4 +1,4 @@
-import * as css from './DatePicker.scss';
+import css from './DatePicker.scss';
 import * as calendarCss from './Calendar.scss';
 import { DatePickerBody as uuiDatePickerBody, DatePickerBodyProps } from '@epam/uui-components';
 import { withMods } from '@epam/uui-core';

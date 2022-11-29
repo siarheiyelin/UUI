@@ -1,0 +1,5 @@
+@use '../../../assets/styles/prettifyScrollBar' as *;
+
+.root {
+    @include prettifyCustomScroll();
+}

@@ -1,0 +1,28 @@
+{
+  "namedInputs": {
+    "sharedGlobals": [
+      "{workspaceRoot}/tsconfig.json",
+      "{workspaceRoot}/tsconfig.module.json"
+    ],
+    "default": [
+      "{projectRoot}/**/*",
+      "!{projectRoot}/build/**/*"
+    ]
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": [
+          "build"
+        ]
+      }
+    }
+  },
+  "targetDefaults": {
+    "build": {
+      "inputs": ["sharedGlobals","default", "^default"],
+      "dependsOn": ["^build"]
+    }
+  }
+}

@@ -3,9 +3,9 @@ import { render } from "react-dom";
 import { ErrorHandler, FlexRow, skinContext as promoSkinContext } from "@epam/promo";
 import { ApiCallOptions, ContextProvider, UuiContexts } from "@epam/uui";
 import { Modals, Snackbar } from "@epam/uui-components";
-import "@epam/uui-components/styles.css";
-import "@epam/promo/styles.css";
-import "@epam/loveship/styles.css";
+import "@epam/uui-components/build/styles.css";
+import "@epam/promo/build/styles.css";
+import "@epam/loveship/build/styles.css";
 import Example from "./Example";
 import { svc, getApi } from './api';
 

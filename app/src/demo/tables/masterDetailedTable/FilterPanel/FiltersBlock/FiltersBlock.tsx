@@ -1,6 +1,6 @@
 import React, { useCallback } from "react";
 import { Filter } from "./Filter";
-import { Accordion } from "@epam/promo";
+import { Accordion } from "@epam/loveship";
 import { TableFiltersConfig, IEditable } from "@epam/uui-core";
 
 interface IFiltersProps<TFilter extends Record<string, any>> extends IEditable<TFilter> {
@@ -9,14 +9,14 @@ interface IFiltersProps<TFilter extends Record<string, any>> extends IEditable<T
 
 const FiltersBlockImpl = <TFilter extends Record<string, any>>(props: IFiltersProps<TFilter>) => {
     const { value, onValueChange, filters } = props;
-    
+
     const handleChange = useCallback((newFilter: TFilter) => {
         onValueChange({
             ...value,
             ...newFilter,
         });
     }, [value]);
-    
+
     return (
         <Accordion title="Filters" mode="inline" padding="18">
             { filters.map(f => {

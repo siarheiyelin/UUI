@@ -1,6 +1,6 @@
 import * as React from 'react';
-import * as css from './Slider.scss';
-import { Slide, SlideProps } from './';
+import css from './Slider.scss';
+import { Slide, SlideProps } from './index';
 import { IconButton } from '@epam/promo';
 import { IAnalyticableOnChange, UuiContext, UuiContexts } from "@epam/uui";
 import { ReactComponent as ArrowPrev } from '../../icons/navigation-left.svg';

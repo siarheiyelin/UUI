@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { IHasRawProps, IModal } from '@epam/uui-core';
-import { ModalBlocker, ModalWindow, FlexSpacer, ModalHeader, Button, ModalFooter, Panel, ScrollBars } from '../';
+import { ModalBlocker, ModalWindow, FlexSpacer, ModalHeader, Button, ModalFooter, Panel, ScrollBars } from '../index';
 import { i18n } from '../../i18n';
 
 export interface ConfirmationModalWindowProps extends IModal<any>, IHasRawProps<React.HTMLAttributes<HTMLDivElement>> {

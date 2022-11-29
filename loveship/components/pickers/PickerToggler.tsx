@@ -6,7 +6,7 @@ import { DataRowProps } from '@epam/uui-core';
 import { TextPlaceholder } from '../typography';
 import { systemIcons } from '../icons/icons';
 import { Tag, TagSize } from '../widgets';
-import * as css from './PickerToggler.scss';
+import css from './PickerToggler.scss';
 
 const defaultSize = '36';
 const defaultMode = 'form';

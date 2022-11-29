@@ -4,10 +4,11 @@
   "description": "EPAM UUI4 components set",
   "author": "EPAM",
   "license": "MIT",
-  "main": "index.js",
-  "typings": "index.d.ts",
+  "main": "build/index.js",
+  "typings": "build/src/index.d.ts",
   "scripts": {
-    "build": "node ../uui-build/scripts/buildModule",
+    "build": "node ../uui-build/scripts/buildModule.mjs",
+    "build-tsc": "tsc --project ./tsconfig.module.json",
     "prepublish": "yarn build"
   },
   "dependencies": {

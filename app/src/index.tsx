@@ -9,6 +9,14 @@ import { AmplitudeListener } from "./analyticsEvents";
 import { svc } from './services';
 import App from './App';
 import { getApi, TApi } from './data';
+import '@epam/uui-components/build/styles.css';
+import '@epam/uui-editor/build/styles.css';
+import '@epam/uui-docs/build/styles.css';
+import '@epam/uui-timeline/build/styles.css';
+import '@epam/uui/build/styles.css';
+import '@epam/promo/build/styles.css';
+//import '@epam/loveship/build/styles.css';
+
 import '@epam/internal/styles.css';
 import './index.scss';
 import './themes/index.css';

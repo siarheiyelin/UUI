@@ -4,10 +4,10 @@
   "description": "EPAM UUI Documentation infrastructure",
   "author": "EPAM",
   "license": "MIT",
-  "main": "index.js",
-  "typings": "index.d.ts",
+  "main": "build/index.js",
+  "typings": "build/index.d.ts",
   "scripts": {
-    "build": "node ../uui-build/scripts/buildModule",
+    "build": "node ../uui-build/scripts/buildModule.mjs",
     "prepublish": "yarn build"
   },
   "dependencies": {

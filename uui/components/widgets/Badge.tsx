@@ -3,7 +3,7 @@ import { withMods } from '@epam/uui-core';
 import { Button, ButtonProps } from '@epam/uui-components';
 import { systemIcons } from '../../icons/icons';
 import * as buttonCss from '../buttons/Button.scss';
-import * as css from './Badge.scss';
+import css from './Badge.scss';
 import '../../assets/styles/variables/widgets/badge.scss';
 
 const defaultSize = '36';

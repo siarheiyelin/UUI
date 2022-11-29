@@ -1,7 +1,8 @@
 # built files
 built
 build
-
+.rollup.cache
+tsconfig.module.tsbuildinfo
 
 # Dependency directories
 node_modules

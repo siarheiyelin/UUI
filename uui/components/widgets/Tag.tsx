@@ -3,7 +3,7 @@ import { Button, ButtonProps } from '@epam/uui-components';
 import { systemIcons } from '../../icons/icons';
 import * as buttonCss from '../buttons/Button.scss';
 import '../../assets/styles/variables/widgets/tag.scss';
-import * as css from './Tag.scss';
+import css from './Tag.scss';
 
 const defaultSize = '36';
 

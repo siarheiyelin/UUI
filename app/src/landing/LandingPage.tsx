@@ -1,6 +1,6 @@
 import React from 'react';
 import { HeroBlock, StartedBlock, QuoteBlock, ContactsBlock, TechnologiesBlock, ProjectsBlock, BenefitsBlock, ExploreBlock,
-    AskDevelopersBlock, ReleasesBlock, InfoBlock, TeamBlock } from './';
+    AskDevelopersBlock, ReleasesBlock, InfoBlock, TeamBlock } from './index';
 import { AppFooter, AppHeader, Page } from '../common';
 import { FlexCell } from '@epam/promo';
 import { analyticsEvents } from "../analyticsEvents";

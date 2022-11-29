@@ -115,6 +115,27 @@ const getStyleLoaders = (cssOptions, preProcessor) => {
   return loaders;
 };
 
+function mapAliases() {
+    const resolve = p => path.resolve(__dirname, `../../node_modules/${p}`)
+
+    const remapModulesToBuildFolder = {
+/*        "@epam/assets": resolve("@epam/assets/build/"),
+        "@epam/loveship": resolve("@epam/loveship/build/"),
+        "@epam/promo": resolve("@epam/promo/build/"),
+        "@epam/uui": resolve("@epam/uui/build/"),
+        "@epam/uui-components": resolve("@epam/uui-components/build/"),
+        "@epam/uui-core": resolve("@epam/uui-core/build/"),
+        "@epam/uui-db": resolve("@epam/uui-db/build/"),
+        "@epam/uui-docs": resolve("@epam/uui-docs/build/"),
+        "@epam/uui-editor": resolve("@epam/uui-editor/build/"),
+        "@epam/uui-timeline": resolve("@epam/uui-timeline/build/"),*/
+    }
+
+    console.log(remapModulesToBuildFolder);
+
+    return remapModulesToBuildFolder;
+}
+
 
 function getLocalIdent(
   context,
@@ -289,6 +310,7 @@ function getLocalIdent(
       // Support React Native Web
       // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
       'react-native': 'react-native-web',
+        ...mapAliases(),
     },
     plugins: [
       // Adds support for installing with Plug'n'Play, leading to faster installs and adding

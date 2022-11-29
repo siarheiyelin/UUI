@@ -1,4 +1,4 @@
-@use './text-size' as *;
+@use 'text-size' as *;
 
 @mixin button-layout($size, $borderWidth) {
     @include button-horizontal-layout($size, $borderWidth);
