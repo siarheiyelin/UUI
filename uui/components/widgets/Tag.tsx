@@ -1,9 +1,9 @@
 import { withMods } from '@epam/uui-core';
 import { Button, ButtonProps } from '@epam/uui-components';
 import { getIcon } from '../../icons';
-import * as buttonCss from '../buttons/Button/Button.scss';
+import buttonCss from '../buttons/Button/Button.scss';
 import '../../assets/styles/variables/widgets/tag.scss';
-import * as css from './Tag.scss';
+import css from './Tag.scss';
 
 const mapSize = {
     '48': '48',

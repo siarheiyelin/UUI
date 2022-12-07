@@ -3,7 +3,7 @@ import { Button as uuiButton, ButtonMode, UUIButtonProps } from '@epam/uui';
 import { withMods } from '@epam/uui-core';
 import { TextSettings, getTextClasses } from '../../helpers/textLayout';
 import { systemIcons } from '../icons/icons';
-import * as css from './Button.scss';
+import css from './Button.scss';
 
 const defaultSize = '36';
 

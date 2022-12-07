@@ -11,7 +11,7 @@ export class FiltersPanelDoc extends BaseDocsBlock {
                 <EditableDocContent fileName='filters-panel-descriptions' />
                 { this.renderSectionTitle('Examples') }
                 <DocExample
-                    title='Filters Panel'
+                    title='Basic'
                     path='./examples/tables/FiltersPanelBasic.example.tsx'
                 />
             </>

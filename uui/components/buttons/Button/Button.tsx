@@ -2,7 +2,7 @@ import { Button as uuiButton, ButtonProps } from '@epam/uui-components';
 import { withMods } from '@epam/uui-core';
 import { ButtonMode } from '../../types';
 import { getIcon } from '../../../icons';
-import * as css from './Button.scss';
+import css from './Button.scss';
 import './Button.colorvars.scss';
 import { uuiComponentClass } from '../../constant';
 

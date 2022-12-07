@@ -9,7 +9,7 @@ import { ReactComponent as InfoIcon } from '@epam/assets/icons/common/notificati
 import { ReactComponent as CopyIcon } from '../../icons/icon-copy.svg';
 import { ReactComponent as ResetIcon } from '../../icons/reset-icon.svg';
 import { ReactComponent as NotificationIcon } from '../../icons/notification-check-fill-24.svg';
-import * as css from './ComponentEditor.scss';
+import css from './ComponentEditor.scss';
 import { Skin } from "./BaseDocsBlock";
 
 declare var require: any;
@@ -70,6 +70,7 @@ interface ComponentEditorState<TProps> {
     showCode: boolean;
     selectedContext?: string;
     selectedProps: { [name: string]: string };
+    inputValues: { [name: string]: string };
 }
 
 enum SkinTheme {
@@ -101,7 +102,7 @@ export class ComponentEditor extends React.Component<ComponentEditorProps<any>, 
             cb.displayName = "(newValue) => { ... }";
             return cb;
         },
-        getSelectedProps: () => this.state.selectedProps,
+        getSelectedProps: () => this.getProps(),
         forceUpdate: () => this.forceUpdate(),
         demoApi: svc.api.demo,
     };
@@ -110,7 +111,8 @@ export class ComponentEditor extends React.Component<ComponentEditorProps<any>, 
         super(props);
 
         if (this.props.propsDocPath !== undefined) {
-            requireContext(`${ this.props.propsDocPath }`).then(((module: any) => {
+            requireContext(`${ this.props.propsDocPath }`).then(((m: any) => {
+                const module = m.default;
                 module.props.forEach((prop: any) => {
                     if (typeof prop.examples === 'function') {
                         this.propExamples[prop.name] = prop.examples(this.propSamplesCreationContext);
@@ -124,7 +126,11 @@ export class ComponentEditor extends React.Component<ComponentEditorProps<any>, 
                     }
 
                     if (defaultExample) {
-                        this.state.selectedProps[prop.name] = defaultExample.value;
+                        this.state.selectedProps[prop.name] = defaultExample.id;
+                    }
+
+                    if (prop.type === 'string') {
+                        this.state.inputValues[prop.name] = defaultExample?.value || '';
                     }
                 });
                 this.initialProps = this.state.selectedProps;
@@ -138,6 +144,7 @@ export class ComponentEditor extends React.Component<ComponentEditorProps<any>, 
             isLoading: true,
             showCode: false,
             selectedProps: {},
+            inputValues: {},
         };
     }
 
@@ -152,10 +159,36 @@ export class ComponentEditor extends React.Component<ComponentEditorProps<any>, 
         }
     }
 
-    renderPropEditor(prop: PropDoc<any, any>) {
-        const onExampleClick = (newValue: string) => this.setState({ ...this.state, selectedProps: { ...this.state.selectedProps, [prop.name]: newValue } });
+    getPropValue(prop: PropDoc<any, any>) {
+        if (typeof prop.examples === 'function') {
+            const result = prop.examples(this.propSamplesCreationContext);
+            this.propExamples[prop.name] = result;
+            return result;
+        } else if (prop.examples.length) {
+            const result = prop.examples;
+            this.propExamples[prop.name] = prop.examples;
+            return result;
+        }
+        return this.propExamples[prop.name];
+    }
 
-        const getPropsDataSource = (items: any[] | any) => new ArrayDataSource({ items, getId: i => i.value });
+    renderPropEditor(prop: PropDoc<any, any>) {
+        const propValue = this.getPropValue(prop);
+        const items = propValue.map(example => ({
+            caption: example.name,
+            id: example.id,
+        }));
+
+        const onExampleClick = (selectedProp: string, inputValue?: string) => {
+            const newStateValues = {
+                selectedProps: { ...this.state.selectedProps, [prop.name]: selectedProp },
+                inputValues: { ...this.state.inputValues, [prop.name]: inputValue },
+            };
+
+            this.setState(newStateValues);
+        };
+
+        const getPropsDataSource = (items: any[] | any) => new ArrayDataSource({ items, getId: i => i.id });
 
         if (prop.renderEditor) {
             return prop.renderEditor(
@@ -176,7 +209,7 @@ export class ComponentEditor extends React.Component<ComponentEditorProps<any>, 
                                 dataSource={ getPropsDataSource(prop.examples) }
                                 selectionMode='single'
                                 value={ this.state.selectedProps[prop.name] }
-                                onValueChange={ newValue => this.setState({ selectedProps: { ...this.state.selectedProps, [prop.name]: newValue } }) }
+                                onValueChange={ inputValue => onExampleClick(inputValue, this.propExamples[prop.name][Number(inputValue)]?.value) }
                                 valueType='id'
                                 entityName={ prop.name }
                                 placeholder={ this.state.selectedProps[prop.name] && this.state.selectedProps[prop.name] }
@@ -184,10 +217,10 @@ export class ComponentEditor extends React.Component<ComponentEditorProps<any>, 
                         </FlexCell>
                         <FlexCell minWidth={ 150 }>
                             <TextInput
-                                onCancel={ () => this.setState({ ...this.state, selectedProps: { ...this.state.selectedProps, [prop.name]: '' } }) }
+                                onCancel={ () => onExampleClick('', '') }
                                 size='24'
-                                value={ this.state.selectedProps[prop.name] }
-                                onValueChange={ (newValue: string) => this.setState({ ...this.state, selectedProps: { ...this.state.selectedProps, [prop.name]: newValue } }) }
+                                onValueChange={ inputValue => onExampleClick(undefined, inputValue) }
+                                value={ this.state.inputValues[prop.name] }
                             />
                         </FlexCell>
                         { prop.description &&
@@ -201,10 +234,7 @@ export class ComponentEditor extends React.Component<ComponentEditorProps<any>, 
                 return (
                     <React.Fragment>
                         <MultiSwitch
-                            items={ this.propExamples[prop.name].map(example => ({
-                                caption: example.name,
-                                id: example.value,
-                            })) }
+                            items={ items }
                             onValueChange={ onExampleClick }
                             value={ this.state.selectedProps[prop.name] }
                             size="24"
@@ -222,7 +252,7 @@ export class ComponentEditor extends React.Component<ComponentEditorProps<any>, 
                     <React.Fragment>
                         <RadioInput
                             value={ !!this.state.selectedProps[prop.name] }
-                            onValueChange={ () => onExampleClick(this.propExamples[prop.name][0].value) }
+                            onValueChange={ () => onExampleClick(this.propExamples[prop.name][0].id) }
                             size='18'
                             label={ this.propExamples[prop.name][0].name }
                         />
@@ -275,9 +305,23 @@ export class ComponentEditor extends React.Component<ComponentEditorProps<any>, 
         return contextPicker;
     }
 
+    getProps() {
+        const props = { ...this.state.selectedProps };
+        for (const key in this.state.selectedProps) {
+            const docComponent = this.state.docs.props.find(doc => doc.name === key);
+            if (docComponent.type === 'string') {
+                props[key] = this.state.inputValues[key];
+                continue;
+            }
+            props[key] = this.propExamples[key].find(({ id }) => id === this.state.selectedProps[key])?.value ?? this.state.selectedProps[key];
+        }
+        return props;
+    }
+
     renderDemo() {
         const { component: DemoComponent } = this.state.docs;
         const defaultContext = this.state.docs.contexts[0];
+        const props = this.getProps();
         let DemoContext = null;
 
         if (!this.state.selectedContext) {
@@ -286,7 +330,7 @@ export class ComponentEditor extends React.Component<ComponentEditorProps<any>, 
             DemoContext = this.state.docs.contexts.filter(ctx => ctx.name == this.state.selectedContext)[0].context;
         }
 
-        return <DemoContext DemoComponent={ DemoComponent } props={ this.state.selectedProps } />;
+        return <DemoContext DemoComponent={ DemoComponent } props={ props } />;
     }
 
     renderCode(selectedProps: { [name: string]: any }) {

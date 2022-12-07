@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { cx, IHasTabIndex, uuiMarkers } from '@epam/uui-core';
-import * as css from './Checkbox.scss';
+import css from './Checkbox.scss';
 import { Icon, uuiMod, uuiElement, isClickableChildClicked, CheckboxCoreProps, UuiContexts, UuiContext } from '@epam/uui-core';
 import { IconContainer } from '../layout';
 
@@ -49,6 +49,7 @@ export class Checkbox extends React.Component<CheckboxProps> {
             <label
                 className={ cx(
                     css.container,
+                    uuiElement.checkboxContainer,
                     this.props.cx,
                     this.props.isDisabled && uuiMod.disabled,
                     this.props.isReadonly && uuiMod.readonly,

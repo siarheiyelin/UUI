@@ -4,7 +4,7 @@ import { LabeledInput as uuiLabeledInput, LabeledInputProps } from '@epam/uui-co
 import { Tooltip } from '../overlays';
 import { getIcon } from '../../icons';
 import '../../assets/styles/variables/layout/labeledInput.scss';
-import * as css from './LabeledInput.scss';
+import css from './LabeledInput.scss';
 
 export interface LabeledInputMods extends types.SizeMod {}
 

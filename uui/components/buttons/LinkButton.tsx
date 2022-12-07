@@ -2,7 +2,7 @@ import { withMods } from '@epam/uui-core';
 import { Button, ButtonProps } from '@epam/uui-components';
 import { getIcon, icons } from '../../icons';
 import { getIconClass } from './helper';
-import * as css from './LinkButton.scss';
+import css from './LinkButton.scss';
 import '../../assets/styles/variables/buttons/linkButton.scss';
 import { uuiComponentClass } from '../constant';
 

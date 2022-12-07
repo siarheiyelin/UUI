@@ -128,7 +128,6 @@ export default function FiltersPanelExample() {
             <DataTable
                 getRows={ view.getVisibleRows }
                 columns={ personColumns }
-                filters={ filtersConfig }
                 value={ tableState }
                 onValueChange={ setTableState }
                 { ...view.getListProps() }

@@ -3,7 +3,7 @@ import { withMods } from '@epam/uui-core';
 import { getIcon, icons } from '../../icons';
 import { getIconClass } from './helper';
 import '../../assets/styles/variables/buttons/tabButton.scss';
-import * as css from './TabButton.scss';
+import css from './TabButton.scss';
 import { uuiComponentClass } from '../constant';
 
 export interface TabButtonMods {
