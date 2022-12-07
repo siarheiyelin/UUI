@@ -1,7 +1,7 @@
 import { withMods } from '@epam/uui-core';
 import { Checkbox as uuiCheckbox, CheckboxProps } from '@epam/uui-components';
 import { getIcon } from '../../../icons';
-import * as css from './Checkbox.scss';
+import css from './Checkbox.scss';
 import './Checkbox.colorvars.scss';
 
 export interface CheckboxMods {
