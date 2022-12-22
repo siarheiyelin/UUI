@@ -10,7 +10,8 @@ import { svc } from './services';
 import App from './App';
 import { getApi, TApi } from './data';
 import './index.scss';
-import './themes/index.css';
+import '@epam/promo/assets/theme.css';
+import '@epam/loveship/assets/theme.css';
 
 
 const history = createBrowserHistory();
