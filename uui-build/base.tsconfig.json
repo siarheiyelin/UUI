@@ -14,26 +14,26 @@
     "sourceMap": true,
     "noEmitOnError": true,
     "jsx": "react",
-    "outDir": "./build",
-    "rootDir": ".",
+    "outDir": "../build",
+    "rootDir": "../.",
     "importHelpers": true,
     "esModuleInterop": true,
     "paths": {
       "@epam/test-utils": [
-        "test-utils"
+        "../test-utils"
       ]
     },
-    "baseUrl": ".",
+    "baseUrl": "../.",
     "isolatedModules": true,
     "moduleResolution": "node"
   },
   "exclude": [
-    "node_modules",
-    "./templates",
-    "./next-app",
-    "**/node_modules",
-    "**/build",
-    "**/__tests__",
-    "**/globals.d.ts"
+    "../node_modules",
+    "../templates",
+    "../next-app",
+    "../**/node_modules",
+    "../**/build",
+    "../**/__tests__",
+    "../**/globals.d.ts"
   ]
 }

@@ -3,7 +3,8 @@
   "version": "4.10.0-rc.5",
   "scripts": {
     "build": "node ../uui-build/scripts/buildModule",
-    "generate-components-api": "ts-node getComponentsPropsSet.ts",
+    "generate-components-api": "ts-node ./getComponentsPropsSet.ts",
+    "transform-tokens": "ts-node ./tokens-converter/index.ts",
     "prepublish": "yarn build"
   },
   "dependencies": {
