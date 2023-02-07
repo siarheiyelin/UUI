@@ -25,5 +25,6 @@ export function useUuiServicesSsr<TApi, TAppContext>(props: IContextProviderSsrP
         ...restProps,
         router: nextRouterWithAdapter,
     });
+    services.isNextJsApp = true;
     return { services };
 }
