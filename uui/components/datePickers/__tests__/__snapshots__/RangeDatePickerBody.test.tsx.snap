@@ -7,7 +7,7 @@ exports[`RangeDatePickerBody should be rendered correctly 1`] = `
   <div
     className="daySelection container container align-items-top"
     style={
-      Object {
+      {
         "columnGap": undefined,
         "rowGap": undefined,
       }
@@ -16,7 +16,7 @@ exports[`RangeDatePickerBody should be rendered correctly 1`] = `
     <div
       className="pickerWrapper container align-items-center"
       style={
-        Object {
+        {
           "columnGap": undefined,
           "rowGap": undefined,
         }
@@ -25,7 +25,7 @@ exports[`RangeDatePickerBody should be rendered correctly 1`] = `
       <div
         className=""
         style={
-          Object {
+          {
             "alignSelf": undefined,
             "flexBasis": "auto",
             "flexGrow": undefined,
@@ -38,7 +38,7 @@ exports[`RangeDatePickerBody should be rendered correctly 1`] = `
         <div
           className="bodesWrapper container align-items-top"
           style={
-            Object {
+            {
               "columnGap": undefined,
               "height": "276px",
               "rowGap": undefined,
@@ -61,7 +61,7 @@ exports[`RangeDatePickerBody should be rendered correctly 1`] = `
                     className="container uui-icon uui-enabled -clickable uui-datepickerheader-nav-icon-left"
                     onClick={[Function]}
                     role="button"
-                    style={Object {}}
+                    style={{}}
                   >
                     <svg
                       className=""
@@ -79,7 +79,7 @@ exports[`RangeDatePickerBody should be rendered correctly 1`] = `
                     className="container uui-icon uui-enabled -clickable uui-datepickerheader-nav-icon-right"
                     onClick={[Function]}
                     role="button"
-                    style={Object {}}
+                    style={{}}
                   >
                     <svg
                       className=""
@@ -135,7 +135,7 @@ exports[`RangeDatePickerBody should be rendered correctly 1`] = `
                   <div
                     className="uui-calendar-days"
                     style={
-                      Object {
+                      {
                         "height": "180px",
                       }
                     }
@@ -625,7 +625,7 @@ exports[`RangeDatePickerBody should be rendered correctly 1`] = `
                     className="container uui-icon uui-enabled -clickable uui-datepickerheader-nav-icon-left"
                     onClick={[Function]}
                     role="button"
-                    style={Object {}}
+                    style={{}}
                   >
                     <svg
                       className=""
@@ -643,7 +643,7 @@ exports[`RangeDatePickerBody should be rendered correctly 1`] = `
                     className="container uui-icon uui-enabled -clickable uui-datepickerheader-nav-icon-right"
                     onClick={[Function]}
                     role="button"
-                    style={Object {}}
+                    style={{}}
                   >
                     <svg
                       className=""
@@ -699,7 +699,7 @@ exports[`RangeDatePickerBody should be rendered correctly 1`] = `
                   <div
                     className="uui-calendar-days"
                     style={
-                      Object {
+                      {
                         "height": "180px",
                       }
                     }

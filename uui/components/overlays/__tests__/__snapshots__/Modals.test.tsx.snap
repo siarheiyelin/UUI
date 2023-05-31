@@ -4,7 +4,7 @@ exports[`Modals should be rendered correctly 1`] = `
 <div
   className="container modalBlocker"
   style={
-    Object {
+    {
       "zIndex": 1,
     }
   }
@@ -16,7 +16,7 @@ exports[`Modals should be rendered correctly 1`] = `
   <div
     data-focus-guard={true}
     style={
-      Object {
+      {
         "height": "0px",
         "left": "1px",
         "overflow": "hidden",
@@ -38,7 +38,7 @@ exports[`Modals should be rendered correctly 1`] = `
       className="uui-modal-window modal container"
       role="modal"
       style={
-        Object {
+        {
           "height": "auto",
           "width": "420px",
         }
@@ -47,7 +47,7 @@ exports[`Modals should be rendered correctly 1`] = `
       <div
         className="root size-36 padding-24 vPadding-12 spacing-12 modalHeader container align-items-center"
         style={
-          Object {
+          {
             "columnGap": undefined,
             "rowGap": undefined,
           }
@@ -56,7 +56,7 @@ exports[`Modals should be rendered correctly 1`] = `
       <div
         className="root size-36 padding-24 vPadding-24 spacing-12 modalFooter container align-items-center"
         style={
-          Object {
+          {
             "columnGap": undefined,
             "rowGap": undefined,
           }
@@ -67,7 +67,7 @@ exports[`Modals should be rendered correctly 1`] = `
   <div
     data-focus-guard={true}
     style={
-      Object {
+      {
         "height": "0px",
         "left": "1px",
         "overflow": "hidden",
@@ -86,7 +86,7 @@ exports[`Modals should be rendered correctly 2`] = `
 <div
   className="container modalBlocker"
   style={
-    Object {
+    {
       "zIndex": 1,
     }
   }
@@ -98,7 +98,7 @@ exports[`Modals should be rendered correctly 2`] = `
   <div
     data-focus-guard={true}
     style={
-      Object {
+      {
         "height": "0px",
         "left": "1px",
         "overflow": "hidden",
@@ -120,7 +120,7 @@ exports[`Modals should be rendered correctly 2`] = `
       className="uui-modal-window modal container"
       role="modal"
       style={
-        Object {
+        {
           "height": "300px",
           "width": "300px",
         }
@@ -129,7 +129,7 @@ exports[`Modals should be rendered correctly 2`] = `
       <div
         className="root size-36 padding-6 vPadding-12 borderBottom spacing-12 modalHeader container align-items-center"
         style={
-          Object {
+          {
             "columnGap": undefined,
             "rowGap": undefined,
           }
@@ -146,7 +146,7 @@ exports[`Modals should be rendered correctly 2`] = `
         <div
           className="flexCell"
           style={
-            Object {
+            {
               "alignSelf": undefined,
               "flexBasis": "auto",
               "flexGrow": undefined,
@@ -164,7 +164,7 @@ exports[`Modals should be rendered correctly 2`] = `
           >
             <div
               className="container uui-icon uui-enabled"
-              style={Object {}}
+              style={{}}
             >
               <svg
                 className=""
@@ -176,7 +176,7 @@ exports[`Modals should be rendered correctly 2`] = `
       <div
         className="root size-36 padding-18 vPadding-24 spacing-12 modalFooter container align-items-center"
         style={
-          Object {
+          {
             "columnGap": undefined,
             "rowGap": undefined,
           }
@@ -187,7 +187,7 @@ exports[`Modals should be rendered correctly 2`] = `
   <div
     data-focus-guard={true}
     style={
-      Object {
+      {
         "height": "0px",
         "left": "1px",
         "overflow": "hidden",

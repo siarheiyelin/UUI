@@ -9,7 +9,7 @@ exports[`SnackbarCard should be rendered correctly 1`] = `
   >
     <div
       className="container uui-icon uui-enabled actionIcon"
-      style={Object {}}
+      style={{}}
     >
       <svg
         className=""
@@ -30,7 +30,7 @@ exports[`SnackbarCard should be rendered correctly 1`] = `
     >
       <div
         className="container uui-icon uui-enabled"
-        style={Object {}}
+        style={{}}
       >
         <svg
           className=""

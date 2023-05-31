@@ -14,11 +14,13 @@ const BASE_CONFIG = {
 
 const JSDOM_ENV_CONFIG = {
     ...BASE_CONFIG,
-    testEnvironment: 'jsdom',
+    testEnvironment: './uui-build/node_modules/jest-environment-jsdom',
     setupFiles: ['<rootDir>/node_modules/react-app-polyfill/jsdom'],
     setupFilesAfterEnv: ['<rootDir>/uui-build/jest/setupJsDom.js'],
     testMatch: ['<rootDir>/**/__tests__/**/*.test.{js,ts,tsx}'],
-    testURL: 'http://localhost',
+    testEnvironmentOptions: {
+        url: 'http://localhost',
+    },
     transform: {
         ...BASE_CONFIG.transform,
         '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': '<rootDir>/uui-build/jest/fileTransform.js',
@@ -35,6 +37,8 @@ const JSDOM_ENV_CONFIG = {
 const NODE_ENV_CONFIG = {
     ...BASE_CONFIG,
     testEnvironment: 'node',
+    testEnvironmentOptions: {
+    },
     testMatch: ['<rootDir>/**/__tests__/**/*.test.{js,ts}'],
 };
 

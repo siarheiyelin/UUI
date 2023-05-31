@@ -4,7 +4,7 @@ exports[`Preset renders correctly when not in rename mode and active 1`] = `
 <div
   className="flexCell"
   style={
-    Object {
+    {
       "alignSelf": "center",
       "flexBasis": "auto",
       "flexGrow": undefined,
@@ -28,7 +28,7 @@ exports[`Preset renders correctly when not in rename mode and active 1`] = `
     </div>
     <div
       className="container uui-icon uui-enabled"
-      style={Object {}}
+      style={{}}
     >
       <button
         className="container uui-button-box uui-enabled -clickable icon-button-info root"
@@ -38,7 +38,7 @@ exports[`Preset renders correctly when not in rename mode and active 1`] = `
       >
         <div
           className="container uui-icon uui-enabled"
-          style={Object {}}
+          style={{}}
         >
           <svg
             className=""
@@ -54,7 +54,7 @@ exports[`Preset renders correctly when not in rename mode and not active 1`] = `
 <div
   className="flexCell"
   style={
-    Object {
+    {
       "alignSelf": "center",
       "flexBasis": "auto",
       "flexGrow": undefined,
@@ -78,7 +78,7 @@ exports[`Preset renders correctly when not in rename mode and not active 1`] = `
     </div>
     <div
       className="container uui-icon uui-enabled"
-      style={Object {}}
+      style={{}}
     >
       <button
         className="container uui-button-box uui-enabled -clickable icon-button-info root"
@@ -88,7 +88,7 @@ exports[`Preset renders correctly when not in rename mode and not active 1`] = `
       >
         <div
           className="container uui-icon uui-enabled"
-          style={Object {}}
+          style={{}}
         >
           <svg
             className=""

@@ -53,7 +53,7 @@ exports[`PickerToggler should be rendered correctly 2`] = `
       <div
         className="container uui-icon uui-enabled -clickable -clickable"
         onClick={[Function]}
-        style={Object {}}
+        style={{}}
       >
         <svg
           className=""
@@ -68,7 +68,7 @@ exports[`PickerToggler should be rendered correctly 2`] = `
       className="container uui-icon uui-enabled -clickable uui-icon-cancel -clickable"
       onClick={[Function]}
       role="button"
-      style={Object {}}
+      style={{}}
       tabIndex={-1}
     >
       <svg

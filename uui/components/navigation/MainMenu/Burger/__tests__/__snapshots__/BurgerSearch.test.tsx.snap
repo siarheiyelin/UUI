@@ -9,7 +9,7 @@ exports[`BurgerSearch should be rendered correctly 1`] = `
 >
   <div
     className="container uui-icon uui-enabled"
-    style={Object {}}
+    style={{}}
   >
     <svg
       className=""
@@ -36,7 +36,7 @@ exports[`BurgerSearch should be rendered correctly 2`] = `
 >
   <div
     className="container uui-icon uui-enabled"
-    style={Object {}}
+    style={{}}
   >
     <svg
       className=""

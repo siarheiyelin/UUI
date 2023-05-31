@@ -10,7 +10,7 @@ exports[`Tag should render with all new props 1`] = `
   <div
     className="container uui-icon uui-enabled -clickable"
     onClick={[MockFunction]}
-    style={Object {}}
+    style={{}}
   >
     <svg
       className=""
@@ -29,7 +29,7 @@ exports[`Tag should render with all new props 1`] = `
   <div
     className="container uui-icon uui-enabled -clickable -clickable"
     onClick={[MockFunction]}
-    style={Object {}}
+    style={{}}
   >
     <svg
       className=""

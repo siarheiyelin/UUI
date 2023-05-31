@@ -15,7 +15,7 @@ exports[`RadioInput should be rendered correctly 1`] = `
     />
     <div
       className="container uui-icon uui-enabled circle"
-      style={Object {}}
+      style={{}}
     >
       <svg
         className=""
@@ -40,7 +40,7 @@ exports[`RadioInput should be rendered correctly with new props 1`] = `
     />
     <div
       className="container uui-icon uui-enabled circle"
-      style={Object {}}
+      style={{}}
     >
       <svg
         className=""

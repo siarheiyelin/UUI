@@ -20,7 +20,7 @@ exports[`Button should render with maximum props 1`] = `
   </div>
   <div
     className="container uui-icon uui-enabled"
-    style={Object {}}
+    style={{}}
   >
     <svg
       className=""
@@ -28,7 +28,7 @@ exports[`Button should render with maximum props 1`] = `
   </div>
   <div
     className="container uui-icon uui-enabled"
-    style={Object {}}
+    style={{}}
   >
     <svg
       className="flipY"
@@ -37,7 +37,7 @@ exports[`Button should render with maximum props 1`] = `
   <div
     className="container uui-icon uui-enabled -clickable -clickable"
     onClick={[Function]}
-    style={Object {}}
+    style={{}}
   >
     <svg
       className=""

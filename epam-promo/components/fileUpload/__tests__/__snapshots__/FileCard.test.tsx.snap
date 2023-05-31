@@ -4,7 +4,7 @@ exports[`FileCard should be rendered correctly 1`] = `
 <div
   className="flexCell fileCardWrapper uui-loading"
   style={
-    Object {
+    {
       "alignSelf": undefined,
       "flexBasis": "100%",
       "flexGrow": undefined,
@@ -17,7 +17,7 @@ exports[`FileCard should be rendered correctly 1`] = `
   <div
     className="root size-36 spacing-6 flex-row-background-none fileCardRow container align-items-top"
     style={
-      Object {
+      {
         "columnGap": undefined,
         "rowGap": undefined,
       }
@@ -25,7 +25,7 @@ exports[`FileCard should be rendered correctly 1`] = `
   >
     <div
       className="container uui-icon uui-enabled root icon-container-gray60 xlsColor"
-      style={Object {}}
+      style={{}}
     >
       <svg
         className=""
@@ -36,7 +36,7 @@ exports[`FileCard should be rendered correctly 1`] = `
     <div
       className="flexCell"
       style={
-        Object {
+        {
           "alignSelf": undefined,
           "flexBasis": "100%",
           "flexGrow": undefined,
@@ -97,7 +97,7 @@ exports[`FileCard should be rendered correctly 2`] = `
 <div
   className="flexCell fileCardWrapper uui-loading"
   style={
-    Object {
+    {
       "alignSelf": undefined,
       "flexBasis": "0",
       "flexGrow": undefined,
@@ -110,7 +110,7 @@ exports[`FileCard should be rendered correctly 2`] = `
   <div
     className="root size-36 spacing-6 flex-row-background-none fileCardRow container align-items-top"
     style={
-      Object {
+      {
         "columnGap": undefined,
         "rowGap": undefined,
       }
@@ -118,7 +118,7 @@ exports[`FileCard should be rendered correctly 2`] = `
   >
     <div
       className="container uui-icon uui-enabled root icon-container-gray60 docColor"
-      style={Object {}}
+      style={{}}
     >
       <svg
         className=""
@@ -129,7 +129,7 @@ exports[`FileCard should be rendered correctly 2`] = `
     <div
       className="flexCell"
       style={
-        Object {
+        {
           "alignSelf": undefined,
           "flexBasis": "100%",
           "flexGrow": undefined,
@@ -190,7 +190,7 @@ exports[`FileCard should be rendered correctly 3`] = `
 <div
   className="flexCell fileCardWrapper"
   style={
-    Object {
+    {
       "alignSelf": undefined,
       "flexBasis": "0",
       "flexGrow": undefined,
@@ -203,7 +203,7 @@ exports[`FileCard should be rendered correctly 3`] = `
   <div
     className="root size-36 spacing-6 flex-row-background-none fileCardRow container align-items-top"
     style={
-      Object {
+      {
         "columnGap": undefined,
         "rowGap": undefined,
       }
@@ -211,7 +211,7 @@ exports[`FileCard should be rendered correctly 3`] = `
   >
     <div
       className="container uui-icon uui-enabled root icon-container-gray60 imgColor"
-      style={Object {}}
+      style={{}}
     >
       <svg
         className=""
@@ -222,7 +222,7 @@ exports[`FileCard should be rendered correctly 3`] = `
     <div
       className="flexCell"
       style={
-        Object {
+        {
           "alignSelf": undefined,
           "flexBasis": "100%",
           "flexGrow": undefined,
@@ -257,7 +257,7 @@ exports[`FileCard should be rendered correctly 3`] = `
       >
         <div
           className="container uui-icon uui-enabled"
-          style={Object {}}
+          style={{}}
         >
           <svg
             className=""

@@ -5,7 +5,7 @@ exports[`VirtualList should be rendered correctly 1`] = `
   className="root scrollContainer"
   cx="scrollContainer"
   style={
-    Object {
+    {
       "display": "flex",
       "height": "100%",
       "overflow": "hidden",
@@ -16,7 +16,7 @@ exports[`VirtualList should be rendered correctly 1`] = `
 >
   <div
     style={
-      Object {
+      {
         "WebkitOverflowScrolling": "touch",
         "bottom": 0,
         "display": "flex",
@@ -35,14 +35,14 @@ exports[`VirtualList should be rendered correctly 1`] = `
     <div
       className="listContainer"
       style={
-        Object {
+        {
           "minHeight": "0px",
         }
       }
     >
       <div
         style={
-          Object {
+          {
             "marginTop": 0,
           }
         }
@@ -52,7 +52,7 @@ exports[`VirtualList should be rendered correctly 1`] = `
   <div
     className="uui-track-horizontal"
     style={
-      Object {
+      {
         "display": "none",
         "height": 6,
         "position": "absolute",
@@ -66,7 +66,7 @@ exports[`VirtualList should be rendered correctly 1`] = `
   <div
     className="uui-track-vertical"
     style={
-      Object {
+      {
         "display": "none",
         "position": "absolute",
         "width": 6,

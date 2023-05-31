@@ -5,7 +5,7 @@ exports[`DataTable should be rendered correctly 1`] = `
   className="root scrollContainer table"
   cx="scrollContainer table"
   style={
-    Object {
+    {
       "display": "flex",
       "height": "100%",
       "overflow": "hidden",
@@ -18,7 +18,7 @@ exports[`DataTable should be rendered correctly 1`] = `
     aria-colcount={0}
     role="table"
     style={
-      Object {
+      {
         "WebkitOverflowScrolling": "touch",
         "bottom": 0,
         "display": "flex",
@@ -41,7 +41,7 @@ exports[`DataTable should be rendered correctly 1`] = `
         className="container uui-table-row-container root root uui-table-header-row container align-items-center"
         role="row"
         style={
-          Object {
+          {
             "columnGap": undefined,
             "minWidth": "0px",
             "rowGap": undefined,
@@ -51,7 +51,7 @@ exports[`DataTable should be rendered correctly 1`] = `
         <div
           className="section scrollingSection uui-table-scrolling-section"
           style={
-            Object {
+            {
               "--uui-dt-cell-border-width": "1px",
               "flex": "1 0 0px",
               "minWidth": "0px",
@@ -66,7 +66,7 @@ exports[`DataTable should be rendered correctly 1`] = `
     <div
       className="listContainer"
       style={
-        Object {
+        {
           "minHeight": "0px",
         }
       }
@@ -74,7 +74,7 @@ exports[`DataTable should be rendered correctly 1`] = `
       <div
         role="rowgroup"
         style={
-          Object {
+          {
             "marginTop": 0,
           }
         }
@@ -84,7 +84,7 @@ exports[`DataTable should be rendered correctly 1`] = `
   <div
     className="uui-track-horizontal"
     style={
-      Object {
+      {
         "display": "none",
         "height": 6,
         "position": "absolute",
@@ -98,7 +98,7 @@ exports[`DataTable should be rendered correctly 1`] = `
   <div
     className="uui-track-vertical"
     style={
-      Object {
+      {
         "display": "none",
         "position": "absolute",
         "width": 6,

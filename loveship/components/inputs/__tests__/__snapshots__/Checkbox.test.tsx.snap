@@ -16,7 +16,7 @@ exports[`Checkbox should be rendered correctly 1`] = `
     />
     <div
       className="container uui-icon uui-enabled"
-      style={Object {}}
+      style={{}}
     >
       <svg
         className=""
@@ -42,7 +42,7 @@ exports[`Checkbox should be rendered correctly with new props 1`] = `
     />
     <div
       className="container uui-icon uui-enabled"
-      style={Object {}}
+      style={{}}
     >
       <svg
         className=""

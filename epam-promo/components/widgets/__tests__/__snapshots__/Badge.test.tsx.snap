@@ -10,7 +10,7 @@ exports[`Badge should render with maximum props 1`] = `
   <div
     className="container uui-icon uui-enabled -clickable"
     onClick={[Function]}
-    style={Object {}}
+    style={{}}
   >
     <svg
       className=""
@@ -29,7 +29,7 @@ exports[`Badge should render with maximum props 1`] = `
   <div
     className="container uui-icon uui-enabled -clickable -clickable"
     onClick={[Function]}
-    style={Object {}}
+    style={{}}
   >
     <svg
       className=""

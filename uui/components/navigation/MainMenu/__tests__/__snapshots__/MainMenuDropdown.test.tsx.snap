@@ -9,7 +9,7 @@ exports[`MainMenuDropdown should be rendered correctly 1`] = `
 >
   <div
     className="container uui-icon uui-enabled"
-    style={Object {}}
+    style={{}}
   >
     <svg
       className=""
@@ -32,7 +32,7 @@ exports[`MainMenuDropdown should be rendered correctly 2`] = `
   </div>
   <div
     className="container uui-icon uui-enabled"
-    style={Object {}}
+    style={{}}
   >
     <svg
       className=""

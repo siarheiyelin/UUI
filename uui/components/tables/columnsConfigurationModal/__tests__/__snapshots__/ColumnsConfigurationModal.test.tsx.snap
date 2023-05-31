@@ -4,7 +4,7 @@ exports[`ColumnsConfigurationModal should be rendered correctly 1`] = `
 <div
   className="container modalBlocker"
   style={
-    Object {
+    {
       "zIndex": 1,
     }
   }
@@ -16,7 +16,7 @@ exports[`ColumnsConfigurationModal should be rendered correctly 1`] = `
   <div
     data-focus-guard={true}
     style={
-      Object {
+      {
         "height": "0px",
         "left": "1px",
         "overflow": "hidden",
@@ -38,7 +38,7 @@ exports[`ColumnsConfigurationModal should be rendered correctly 1`] = `
       className="uui-modal-window modal container"
       role="modal"
       style={
-        Object {
+        {
           "height": "700px",
           "width": "420px",
         }
@@ -47,7 +47,7 @@ exports[`ColumnsConfigurationModal should be rendered correctly 1`] = `
       <div
         className="root size-36 padding-24 vPadding-12 spacing-12 modalHeader container align-items-center"
         style={
-          Object {
+          {
             "columnGap": undefined,
             "rowGap": undefined,
           }
@@ -64,7 +64,7 @@ exports[`ColumnsConfigurationModal should be rendered correctly 1`] = `
         <div
           className="flexCell"
           style={
-            Object {
+            {
               "alignSelf": undefined,
               "flexBasis": "auto",
               "flexGrow": undefined,
@@ -82,7 +82,7 @@ exports[`ColumnsConfigurationModal should be rendered correctly 1`] = `
           >
             <div
               className="container uui-icon uui-enabled"
-              style={Object {}}
+              style={{}}
             >
               <svg
                 className=""
@@ -94,7 +94,7 @@ exports[`ColumnsConfigurationModal should be rendered correctly 1`] = `
       <div
         className="root size-36 padding-24 borderBottom spacing-12 searchArea container align-items-center"
         style={
-          Object {
+          {
             "columnGap": undefined,
             "rowGap": undefined,
           }
@@ -108,7 +108,7 @@ exports[`ColumnsConfigurationModal should be rendered correctly 1`] = `
         >
           <div
             className="container uui-icon uui-enabled"
-            style={Object {}}
+            style={{}}
           >
             <svg
               className=""
@@ -133,7 +133,7 @@ exports[`ColumnsConfigurationModal should be rendered correctly 1`] = `
         >
           <div
             className="container uui-icon uui-enabled"
-            style={Object {}}
+            style={{}}
           >
             <svg
               className=""
@@ -147,8 +147,8 @@ exports[`ColumnsConfigurationModal should be rendered correctly 1`] = `
         <div
           className="root uui-scroll-bars uui-shadow-top uui-shadow-bottom"
           cx={
-            Array [
-              Array [
+            [
+              [
                 "uui-scroll-bars",
                 "uui-shadow-top",
                 "uui-shadow-bottom",
@@ -157,7 +157,7 @@ exports[`ColumnsConfigurationModal should be rendered correctly 1`] = `
             ]
           }
           style={
-            Object {
+            {
               "display": "flex",
               "height": "100%",
               "overflow": "hidden",
@@ -168,7 +168,7 @@ exports[`ColumnsConfigurationModal should be rendered correctly 1`] = `
         >
           <div
             style={
-              Object {
+              {
                 "WebkitOverflowScrolling": "touch",
                 "bottom": 0,
                 "flex": "1 1 auto",
@@ -185,7 +185,7 @@ exports[`ColumnsConfigurationModal should be rendered correctly 1`] = `
             <div
               className="root size-24 padding-24 spacing-6 groupTitle container align-items-center"
               style={
-                Object {
+                {
                   "columnGap": undefined,
                   "rowGap": undefined,
                 }
@@ -212,7 +212,7 @@ exports[`ColumnsConfigurationModal should be rendered correctly 1`] = `
             <div
               className="root size-30 groupItems container align-items-center"
               style={
-                Object {
+                {
                   "columnGap": undefined,
                   "rowGap": undefined,
                 }
@@ -225,7 +225,7 @@ exports[`ColumnsConfigurationModal should be rendered correctly 1`] = `
                 onPointerMove={[Function]}
                 onPointerUp={[Function]}
                 style={
-                  Object {
+                  {
                     "columnGap": undefined,
                     "rowGap": undefined,
                   }
@@ -234,7 +234,7 @@ exports[`ColumnsConfigurationModal should be rendered correctly 1`] = `
                 <div
                   className="root size-30 spacing-6 title container align-items-center"
                   style={
-                    Object {
+                    {
                       "columnGap": undefined,
                       "rowGap": undefined,
                     }
@@ -262,7 +262,7 @@ exports[`ColumnsConfigurationModal should be rendered correctly 1`] = `
                       />
                       <div
                         className="container uui-icon uui-enabled"
-                        style={Object {}}
+                        style={{}}
                       >
                         <svg
                           className=""
@@ -282,7 +282,7 @@ exports[`ColumnsConfigurationModal should be rendered correctly 1`] = `
                 <div
                   className="root size-30 pinIconButton container align-items-center"
                   style={
-                    Object {
+                    {
                       "columnGap": undefined,
                       "rowGap": undefined,
                     }
@@ -301,7 +301,7 @@ exports[`ColumnsConfigurationModal should be rendered correctly 1`] = `
                     >
                       <div
                         className="container uui-icon uui-enabled"
-                        style={Object {}}
+                        style={{}}
                       >
                         <svg
                           className=""
@@ -318,7 +318,7 @@ exports[`ColumnsConfigurationModal should be rendered correctly 1`] = `
                 onPointerMove={[Function]}
                 onPointerUp={[Function]}
                 style={
-                  Object {
+                  {
                     "columnGap": undefined,
                     "rowGap": undefined,
                   }
@@ -327,7 +327,7 @@ exports[`ColumnsConfigurationModal should be rendered correctly 1`] = `
                 <div
                   className="root size-30 spacing-6 title container align-items-center"
                   style={
-                    Object {
+                    {
                       "columnGap": undefined,
                       "rowGap": undefined,
                     }
@@ -355,7 +355,7 @@ exports[`ColumnsConfigurationModal should be rendered correctly 1`] = `
                       />
                       <div
                         className="container uui-icon uui-enabled"
-                        style={Object {}}
+                        style={{}}
                       >
                         <svg
                           className=""
@@ -375,7 +375,7 @@ exports[`ColumnsConfigurationModal should be rendered correctly 1`] = `
                 <div
                   className="root size-30 pinIconButton container align-items-center"
                   style={
-                    Object {
+                    {
                       "columnGap": undefined,
                       "rowGap": undefined,
                     }
@@ -394,7 +394,7 @@ exports[`ColumnsConfigurationModal should be rendered correctly 1`] = `
                     >
                       <div
                         className="container uui-icon uui-enabled"
-                        style={Object {}}
+                        style={{}}
                       >
                         <svg
                           className=""
@@ -409,7 +409,7 @@ exports[`ColumnsConfigurationModal should be rendered correctly 1`] = `
           <div
             className="uui-track-horizontal"
             style={
-              Object {
+              {
                 "display": "none",
                 "height": 6,
                 "position": "absolute",
@@ -423,7 +423,7 @@ exports[`ColumnsConfigurationModal should be rendered correctly 1`] = `
           <div
             className="uui-track-vertical"
             style={
-              Object {
+              {
                 "display": "none",
                 "position": "absolute",
                 "width": 6,
@@ -439,7 +439,7 @@ exports[`ColumnsConfigurationModal should be rendered correctly 1`] = `
       <div
         className="root size-36 padding-24 vPadding-24 spacing-12 modalFooter borderTop container align-items-center"
         style={
-          Object {
+          {
             "columnGap": undefined,
             "rowGap": undefined,
           }
@@ -453,7 +453,7 @@ exports[`ColumnsConfigurationModal should be rendered correctly 1`] = `
         >
           <div
             className="container uui-icon uui-enabled"
-            style={Object {}}
+            style={{}}
           >
             <svg
               className=""
@@ -499,7 +499,7 @@ exports[`ColumnsConfigurationModal should be rendered correctly 1`] = `
   <div
     data-focus-guard={true}
     style={
-      Object {
+      {
         "height": "0px",
         "left": "1px",
         "overflow": "hidden",
@@ -518,7 +518,7 @@ exports[`ColumnsConfigurationModal should disable Apply button if all columns ar
 <div
   className="container modalBlocker"
   style={
-    Object {
+    {
       "zIndex": 1,
     }
   }
@@ -530,7 +530,7 @@ exports[`ColumnsConfigurationModal should disable Apply button if all columns ar
   <div
     data-focus-guard={true}
     style={
-      Object {
+      {
         "height": "0px",
         "left": "1px",
         "overflow": "hidden",
@@ -552,7 +552,7 @@ exports[`ColumnsConfigurationModal should disable Apply button if all columns ar
       className="uui-modal-window modal container"
       role="modal"
       style={
-        Object {
+        {
           "height": "700px",
           "width": "420px",
         }
@@ -561,7 +561,7 @@ exports[`ColumnsConfigurationModal should disable Apply button if all columns ar
       <div
         className="root size-36 padding-24 vPadding-12 spacing-12 modalHeader container align-items-center"
         style={
-          Object {
+          {
             "columnGap": undefined,
             "rowGap": undefined,
           }
@@ -578,7 +578,7 @@ exports[`ColumnsConfigurationModal should disable Apply button if all columns ar
         <div
           className="flexCell"
           style={
-            Object {
+            {
               "alignSelf": undefined,
               "flexBasis": "auto",
               "flexGrow": undefined,
@@ -596,7 +596,7 @@ exports[`ColumnsConfigurationModal should disable Apply button if all columns ar
           >
             <div
               className="container uui-icon uui-enabled"
-              style={Object {}}
+              style={{}}
             >
               <svg
                 className=""
@@ -608,7 +608,7 @@ exports[`ColumnsConfigurationModal should disable Apply button if all columns ar
       <div
         className="root size-36 padding-24 borderBottom spacing-12 searchArea container align-items-center"
         style={
-          Object {
+          {
             "columnGap": undefined,
             "rowGap": undefined,
           }
@@ -622,7 +622,7 @@ exports[`ColumnsConfigurationModal should disable Apply button if all columns ar
         >
           <div
             className="container uui-icon uui-enabled"
-            style={Object {}}
+            style={{}}
           >
             <svg
               className=""
@@ -647,7 +647,7 @@ exports[`ColumnsConfigurationModal should disable Apply button if all columns ar
         >
           <div
             className="container uui-icon uui-enabled"
-            style={Object {}}
+            style={{}}
           >
             <svg
               className=""
@@ -661,8 +661,8 @@ exports[`ColumnsConfigurationModal should disable Apply button if all columns ar
         <div
           className="root uui-scroll-bars uui-shadow-top uui-shadow-bottom"
           cx={
-            Array [
-              Array [
+            [
+              [
                 "uui-scroll-bars",
                 "uui-shadow-top",
                 "uui-shadow-bottom",
@@ -671,7 +671,7 @@ exports[`ColumnsConfigurationModal should disable Apply button if all columns ar
             ]
           }
           style={
-            Object {
+            {
               "display": "flex",
               "height": "100%",
               "overflow": "hidden",
@@ -682,7 +682,7 @@ exports[`ColumnsConfigurationModal should disable Apply button if all columns ar
         >
           <div
             style={
-              Object {
+              {
                 "WebkitOverflowScrolling": "touch",
                 "bottom": 0,
                 "flex": "1 1 auto",
@@ -699,7 +699,7 @@ exports[`ColumnsConfigurationModal should disable Apply button if all columns ar
             <div
               className="root size-24 padding-24 spacing-6 groupTitle container align-items-center"
               style={
-                Object {
+                {
                   "columnGap": undefined,
                   "rowGap": undefined,
                 }
@@ -726,7 +726,7 @@ exports[`ColumnsConfigurationModal should disable Apply button if all columns ar
             <div
               className="root size-30 groupItems container align-items-center"
               style={
-                Object {
+                {
                   "columnGap": undefined,
                   "rowGap": undefined,
                 }
@@ -739,7 +739,7 @@ exports[`ColumnsConfigurationModal should disable Apply button if all columns ar
                 onPointerMove={[Function]}
                 onPointerUp={[Function]}
                 style={
-                  Object {
+                  {
                     "columnGap": undefined,
                     "rowGap": undefined,
                   }
@@ -748,7 +748,7 @@ exports[`ColumnsConfigurationModal should disable Apply button if all columns ar
                 <div
                   className="root size-30 spacing-6 title container align-items-center"
                   style={
-                    Object {
+                    {
                       "columnGap": undefined,
                       "rowGap": undefined,
                     }
@@ -787,7 +787,7 @@ exports[`ColumnsConfigurationModal should disable Apply button if all columns ar
                 <div
                   className="root size-30 pinIconButton container align-items-center"
                   style={
-                    Object {
+                    {
                       "columnGap": undefined,
                       "rowGap": undefined,
                     }
@@ -806,7 +806,7 @@ exports[`ColumnsConfigurationModal should disable Apply button if all columns ar
                     >
                       <div
                         className="container uui-icon uui-enabled"
-                        style={Object {}}
+                        style={{}}
                       >
                         <svg
                           className=""
@@ -823,7 +823,7 @@ exports[`ColumnsConfigurationModal should disable Apply button if all columns ar
                 onPointerMove={[Function]}
                 onPointerUp={[Function]}
                 style={
-                  Object {
+                  {
                     "columnGap": undefined,
                     "rowGap": undefined,
                   }
@@ -832,7 +832,7 @@ exports[`ColumnsConfigurationModal should disable Apply button if all columns ar
                 <div
                   className="root size-30 spacing-6 title container align-items-center"
                   style={
-                    Object {
+                    {
                       "columnGap": undefined,
                       "rowGap": undefined,
                     }
@@ -871,7 +871,7 @@ exports[`ColumnsConfigurationModal should disable Apply button if all columns ar
                 <div
                   className="root size-30 pinIconButton container align-items-center"
                   style={
-                    Object {
+                    {
                       "columnGap": undefined,
                       "rowGap": undefined,
                     }
@@ -890,7 +890,7 @@ exports[`ColumnsConfigurationModal should disable Apply button if all columns ar
                     >
                       <div
                         className="container uui-icon uui-enabled"
-                        style={Object {}}
+                        style={{}}
                       >
                         <svg
                           className=""
@@ -905,7 +905,7 @@ exports[`ColumnsConfigurationModal should disable Apply button if all columns ar
           <div
             className="uui-track-horizontal"
             style={
-              Object {
+              {
                 "display": "none",
                 "height": 6,
                 "position": "absolute",
@@ -919,7 +919,7 @@ exports[`ColumnsConfigurationModal should disable Apply button if all columns ar
           <div
             className="uui-track-vertical"
             style={
-              Object {
+              {
                 "display": "none",
                 "position": "absolute",
                 "width": 6,
@@ -935,7 +935,7 @@ exports[`ColumnsConfigurationModal should disable Apply button if all columns ar
       <div
         className="root size-36 padding-24 vPadding-24 spacing-12 modalFooter borderTop container align-items-center"
         style={
-          Object {
+          {
             "columnGap": undefined,
             "rowGap": undefined,
           }
@@ -949,7 +949,7 @@ exports[`ColumnsConfigurationModal should disable Apply button if all columns ar
         >
           <div
             className="container uui-icon uui-enabled"
-            style={Object {}}
+            style={{}}
           >
             <svg
               className=""
@@ -995,7 +995,7 @@ exports[`ColumnsConfigurationModal should disable Apply button if all columns ar
   <div
     data-focus-guard={true}
     style={
-      Object {
+      {
         "height": "0px",
         "left": "1px",
         "overflow": "hidden",

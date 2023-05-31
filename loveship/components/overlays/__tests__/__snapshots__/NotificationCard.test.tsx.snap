@@ -32,7 +32,7 @@ exports[`ErrorNotification should be rendered correctly 1`] = `
     >
       <div
         className="container uui-icon uui-enabled actionIcon"
-        style={Object {}}
+        style={{}}
       >
         <svg
           className=""
@@ -53,7 +53,7 @@ exports[`ErrorNotification should be rendered correctly 1`] = `
       >
         <div
           className="container uui-icon uui-enabled"
-          style={Object {}}
+          style={{}}
         >
           <svg
             className=""
@@ -78,7 +78,7 @@ exports[`HintNotification should be rendered correctly 1`] = `
     >
       <div
         className="container uui-icon uui-enabled actionIcon"
-        style={Object {}}
+        style={{}}
       >
         <svg
           className=""
@@ -99,7 +99,7 @@ exports[`HintNotification should be rendered correctly 1`] = `
       >
         <div
           className="container uui-icon uui-enabled"
-          style={Object {}}
+          style={{}}
         >
           <svg
             className=""
@@ -124,7 +124,7 @@ exports[`NotificationCard should be rendered correctly 1`] = `
     >
       <div
         className="container uui-icon uui-enabled actionIcon"
-        style={Object {}}
+        style={{}}
       >
         <svg
           className=""
@@ -145,7 +145,7 @@ exports[`NotificationCard should be rendered correctly 1`] = `
       >
         <div
           className="container uui-icon uui-enabled"
-          style={Object {}}
+          style={{}}
         >
           <svg
             className=""
@@ -170,7 +170,7 @@ exports[`NotificationCard should be rendered correctly with icon 1`] = `
     >
       <div
         className="container uui-icon uui-enabled actionIcon"
-        style={Object {}}
+        style={{}}
       >
         <svg
           className=""
@@ -191,7 +191,7 @@ exports[`NotificationCard should be rendered correctly with icon 1`] = `
       >
         <div
           className="container uui-icon uui-enabled"
-          style={Object {}}
+          style={{}}
         >
           <svg
             className=""
@@ -216,7 +216,7 @@ exports[`SuccessNotification should be rendered correctly 1`] = `
     >
       <div
         className="container uui-icon uui-enabled actionIcon"
-        style={Object {}}
+        style={{}}
       >
         <svg
           className=""
@@ -237,7 +237,7 @@ exports[`SuccessNotification should be rendered correctly 1`] = `
       >
         <div
           className="container uui-icon uui-enabled"
-          style={Object {}}
+          style={{}}
         >
           <svg
             className=""
@@ -262,7 +262,7 @@ exports[`WarningNotification should be rendered correctly 1`] = `
     >
       <div
         className="container uui-icon uui-enabled actionIcon"
-        style={Object {}}
+        style={{}}
       >
         <svg
           className=""
@@ -283,7 +283,7 @@ exports[`WarningNotification should be rendered correctly 1`] = `
       >
         <div
           className="container uui-icon uui-enabled"
-          style={Object {}}
+          style={{}}
         >
           <svg
             className=""
