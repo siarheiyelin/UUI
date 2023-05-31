@@ -1,4 +1,9 @@
 const BASE_CONFIG = {
+    globals: {
+        'ts-jest': {
+            tsconfig: 'tsconfig.test.json',
+        },
+    },
     testPathIgnorePatterns: ['node_modules'],
     modulePathIgnorePatterns: ['/build/'],
     moduleFileExtensions: [
@@ -8,7 +13,8 @@ const BASE_CONFIG = {
         '@epam/uui-test-utils': '<rootDir>/test-utils',
     },
     transform: {
-        '^.+\\.(js|ts|tsx)$': ['<rootDir>/node_modules/babel-jest'],
+        '^.+\\.(ts|tsx)$': ['ts-jest'],
+        '^.+\\.(js)$': ['<rootDir>/node_modules/babel-jest'],
     },
 };
 
