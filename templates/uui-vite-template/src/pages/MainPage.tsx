@@ -1,4 +1,4 @@
-import { Panel, RichTextView, IconContainer } from '@epam/uui';
+import { Panel, RichTextView, IconContainer, Button } from '@epam/uui';
 import { ReactComponent as UuiPromoImage } from '../icons/uui-promo-image.svg';
 import css from './MainPage.module.scss';
 import { useUuiContext } from '@epam/uui-core';
@@ -6,7 +6,7 @@ import { TApi, TMainPageLink } from '../app/helpers/apiDefinition';
 import { TAppContext } from '../app/helpers/appContext';
 import { useEffect, useState } from 'react';
 
-export const MainPage = () => {
+export const MainPage = (props: any) => {
     return (
         <main>
             <div className={css.bgImg}>
@@ -16,6 +16,10 @@ export const MainPage = () => {
                 <RichTextView size="14">
                     <h3>Welcome to UUI template app</h3>
                     <Links />
+                    <Button
+                        caption="Test button"
+                        onClick={props?.onClick?.()}
+                    />
                 </RichTextView>
             </Panel>
         </main>

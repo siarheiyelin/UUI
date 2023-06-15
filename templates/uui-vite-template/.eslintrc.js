@@ -42,7 +42,6 @@ module.exports = {
         {
             files: ['./src/**/*.test.ts?(x)'],
             extends: [
-                'plugin:jest/recommended',
                 'plugin:testing-library/react',
             ],
         },

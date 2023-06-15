@@ -19,7 +19,7 @@ const testApi: TApi = {
         },
     ],
 };
-function TestContextWrapper({ children }: { children?: ReactNode }) {
+export function TestContextWrapper({ children }: { children?: ReactNode }) {
     return (
         <ContextProvider<TApi, TAppContext>
             onInitCompleted={() => {}}
