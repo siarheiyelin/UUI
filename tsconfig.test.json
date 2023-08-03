@@ -6,14 +6,10 @@
     "noImplicitAny": false
   },
   "include": [
-    "**/*.test.ts*",
-    "uui_globals.d.ts"
+    "./**/__tests__/**/*.test.ts*",
+    "./uui_globals.d.ts"
   ],
   "exclude": [
-    "node_modules",
-    "next-app",
-    "templates",
-    "**/build",
-    "**/node_modules"
+    "node_modules"
   ]
 }

@@ -30,12 +30,12 @@
   },
   "exclude": [
     "node_modules",
-    "templates",
-    "next-app",
-    "uui_globals.d.ts",
+    "./templates",
+    "./next-app",
     "**/node_modules",
     "**/build",
     "**/__tests__",
-    "**/globals.d.ts"
+    "**/globals.d.ts",
+    "./uui_globals.d.ts"
   ]
 }
