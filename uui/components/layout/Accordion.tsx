@@ -1,4 +1,4 @@
-import { withMods } from '@epam/uui-core';
+import { OmitForwardedRef, withMods } from '@epam/uui-core';
 import * as uuiComponents from '@epam/uui-components';
 import { systemIcons } from '../../icons/icons';
 import css from './Accordion.module.scss';
@@ -9,7 +9,7 @@ export interface AccordionMods {
     padding?: '0' | '6' | '12' | '18';
 }
 
-export type AccordionProps = AccordionMods & uuiComponents.AccordionProps;
+export type AccordionProps = AccordionMods & OmitForwardedRef<uuiComponents.AccordionProps>;
 
 function applyAccordionMods(mods: AccordionProps) {
     return [
@@ -19,6 +19,6 @@ function applyAccordionMods(mods: AccordionProps) {
     ];
 }
 
-export const Accordion = withMods<uuiComponents.AccordionProps, AccordionMods>(uuiComponents.Accordion, applyAccordionMods, (mods) => ({
+export const Accordion = withMods<OmitForwardedRef<uuiComponents.AccordionProps>, AccordionMods>(uuiComponents.Accordion, applyAccordionMods, (mods) => ({
     dropdownIcon: mods.dropdownIcon !== null && systemIcons[mods.mode === 'block' ? '60' : '30'].foldingArrow,
 }));

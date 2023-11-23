@@ -183,7 +183,6 @@ export class RangeDatePickerBody extends React.Component<RangeDatePickerBodyProp
             <>
                 <div className={ uuiRangeDatePickerBody.separator } />
                 <CalendarPresets
-                    forwardedRef={ this.props.forwardedRef }
                     onPresetSet={ (presetVal) => {
                         this.props.onValueChange({
                             view: 'DAY_SELECTION',

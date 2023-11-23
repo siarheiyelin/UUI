@@ -2,12 +2,17 @@ import * as React from 'react';
 import { CX } from '../types';
 import { forwardRef } from './forwardRef';
 
+type OmitUnion<T, K extends keyof T> = T extends any ? Omit<T, K> : never;
+export type OmitForwardedRef<TProps> = 'forwardedRef' extends keyof TProps
+    ? OmitUnion<TProps, 'forwardedRef'> & { ref?: TProps['forwardedRef'] | undefined }
+    : TProps;
+
 export function withMods<TProps, TMods = {}>(
     Component: React.ComponentType<TProps> | React.NamedExoticComponent<TProps>,
-    getCx?: (props: Readonly<TProps & TMods>) => CX,
-    getProps?: (props: Readonly<TProps & TMods>) => Partial<TProps>,
+    getCx?: (props: Readonly<OmitForwardedRef<TProps> & TMods>) => CX,
+    getProps?: (props: Readonly<OmitForwardedRef<TProps> & TMods>) => Partial<TProps>,
 ) {
-    const wrappedComponent = forwardRef<any, TProps & TMods>((props, ref) => {
+    const wrappedComponent = forwardRef<any, OmitForwardedRef<TProps> & TMods>((props, ref) => {
         // Most components are wrapped in withMods component.
         // Please keep this method simple, and performant
         // Don't clone objects/arrays if not needed
