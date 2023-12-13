@@ -1,6 +1,6 @@
 type TVarModes = Record<string, 'Loveship-Light' | 'Loveship-Dark' | 'Promo' | 'EPAM'>;
 type TVarScope = string | 'ALL_SCOPES';
-type TVarType = string | 'COLOR';
+type TVarType = string | 'COLOR' | 'FLOAT';
 type TVarValueType = string | 'VARIABLE_ALIAS';
 export interface IFigmaVar {
     id: string
@@ -8,21 +8,21 @@ export interface IFigmaVar {
     description: string
     type: TVarType
     valuesByMode: {
-        [modeId: string]: {
+        [themeId: string]: {
             type: TVarValueType
             id: string
         }
     }
     resolvedValuesByMode: {
-        [modeId: string]: {
+        [themeId: string]: {
             resolvedValue: {
                 r: number
                 g: number
                 b: number
                 a: number
             }
-            alias: string
-            aliasName: string // use this to generate token (it looks like: "core/semantic/critical-70")
+            alias: string | null
+            aliasName: string | undefined // use this to generate token (it looks like: "core/semantic/critical-70")
         }
     }
     scopes: TVarScope[]
@@ -56,4 +56,15 @@ export interface ICssTokenConfig {
      * @default true
      */
     isSupportedByUUiApp?: boolean
+}
+
+export interface IThemeVars {
+    tokens: {
+        type: TVarType,
+        path: string,
+        name: TUuiCssToken,
+        description: string | undefined,
+        useCases: string | undefined,
+        value: { var: string } | string | undefined
+    }[],
 }
