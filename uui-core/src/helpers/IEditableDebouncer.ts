@@ -6,13 +6,8 @@ import {
     ReactElement, useCallback, useEffect, useMemo, useRef, useState,
 } from 'react';
 
-/**
- * IEditableDebouncer component options.
- */
 export interface IEditableDebouncerOptions {
-    /** Pass true to disable debouncing */
     disableDebounce?: boolean;
-    /** Debounce delay in ms. Default value is 500ms */
     debounceDelay?: number;
 }
 
