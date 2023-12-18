@@ -24,6 +24,7 @@ env:
     PREV_DOCS_GEN_STATS_REPORT_PATH: ../target-branch/public/docs/docsGenOutput/docsGenStats.json # Pay attention it should be relative to the "merge commit branch" dir.
     REPORT_1_PATH: ./merge-commit-branch/.reports/trackBundleSize.md
     REPORT_2_PATH: ./merge-commit-branch/.reports/generateComponentsApiStats.md
+    TEMPLATE_APP_LOCK_FILE_PATH: ./merge-commit-branch/.templates/uui-cra-template/app/package-lock.json
 
 jobs:
     quality_gate:
@@ -53,10 +54,10 @@ jobs:
                       ${{ env.MERGE_COMMIT_BRANCH_DIR }}/yarn.lock
 
             - uses: actions/cache@v3
-              id: npm-cache (for the ${{ env.MERGE_COMMIT_BRANCH_DIR }}/.templates/uui-cra-template/app)
+              id: npm-cache (for the ${{ env.TEMPLATE_APP_LOCK_FILE_PATH }})
               with:
                   path: ~/.npm
-                  key: ${{ runner.os }}-node-${{ hashFiles('${{ env.MERGE_COMMIT_BRANCH_DIR }}/.templates/uui-cra-template/app/package-lock.json') }}
+                  key: ${{ runner.os }}-node-${{ hashFiles('${{ env.TEMPLATE_APP_LOCK_FILE_PATH }}') }}
                   restore-keys: |
                       ${{ runner.os }}-node-
 
