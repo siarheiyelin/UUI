@@ -7,7 +7,7 @@ import {
 } from 'react';
 
 /**
- * IEditableDebouncer component options.!!!
+ * IEditableDebouncer component options.!!!1
  */
 export interface IEditableDebouncerOptions {
     /** Pass true to disable debouncing */
