@@ -24,18 +24,18 @@ env:
     PREV_DOCS_GEN_STATS_REPORT_PATH: ../target-branch/public/docs/docsGenOutput/docsGenStats.json # Pay attention it should be relative to the "merge commit branch" dir.
     REPORT_1_PATH: ./merge-commit-branch/.reports/trackBundleSize.md
     REPORT_2_PATH: ./merge-commit-branch/.reports/generateComponentsApiStats.md
+    TEMPLATE_APP_LOCK_FILE_PATH: ./merge-commit-branch/.templates/uui-cra-template/app/package-lock.json
 
 jobs:
     quality_gate:
         runs-on: ubuntu-latest
-        container: node:20
         steps:
             # By default, it checks out the "merge-commit" for "pull_request" events (https://github.com/actions/checkout)
             # I.e. the result of merging source branch to the target branch will be checked out.
             - name: 'Checkout the "merge commit" branch'
               uses: actions/checkout@v4
               with:
-                path: ${{ env.MERGE_COMMIT_BRANCH_DIR }}
+                  path: ${{ env.MERGE_COMMIT_BRANCH_DIR }}
 
             # Checkout the TARGET branch.
             - name: 'Checkout "target" branch'
@@ -45,13 +45,23 @@ jobs:
                   repository: ${{ github.event.pull_request.base.repo.full_name }}
                   path: ${{ env.TARGET_BRANCH_DIR }}
 
-            - uses: actions/cache@v3
+            - uses: actions/setup-node@v4
               with:
-                  path: |
-                      node_modules
-                      ./*/node_modules
-                  key: v1-npm-deps-${{ hashFiles('**/yarn.lock') }}
-                  restore-keys: v1-npm-deps-
+                  node-version: '20.x'
+                  cache: 'yarn'
+                  cache-dependency-path: |
+                      ${{ env.TARGET_BRANCH_DIR }}/yarn.lock
+                      ${{ env.TARGET_BRANCH_DIR }}/*/yarn.lock
+                      ${{ env.MERGE_COMMIT_BRANCH_DIR }}/yarn.lock
+                      ${{ env.MERGE_COMMIT_BRANCH_DIR }}/*/yarn.lock
+
+            - uses: actions/cache@v3
+              id: npm-cache (for the ${{ env.TEMPLATE_APP_LOCK_FILE_PATH }})
+              with:
+                  path: ~/.npm
+                  key: ${{ runner.os }}-node-${{ hashFiles('${{ env.TEMPLATE_APP_LOCK_FILE_PATH }}') }}
+                  restore-keys: |
+                      ${{ runner.os }}-node-
 
             - name: 'Install dependencies & Run "generate-components-api" (target branch)'
               working-directory: ${{ env.TARGET_BRANCH_DIR }}
