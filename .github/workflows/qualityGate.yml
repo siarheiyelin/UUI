@@ -56,7 +56,7 @@ jobs:
                       ${{ env.MERGE_COMMIT_BRANCH_DIR }}/*/yarn.lock
 
             - uses: actions/cache@v3
-              id: npm-cache (for the ${{ env.TEMPLATE_APP_LOCK_FILE_PATH }})
+              id: npm-cache (for the template app)
               with:
                   path: ~/.npm
                   key: ${{ runner.os }}-node-${{ hashFiles('${{ env.TEMPLATE_APP_LOCK_FILE_PATH }}') }}
