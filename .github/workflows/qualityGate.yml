@@ -51,7 +51,9 @@ jobs:
                   cache: 'yarn'
                   cache-dependency-path: |
                       ${{ env.TARGET_BRANCH_DIR }}/yarn.lock
+                      ${{ env.TARGET_BRANCH_DIR }}/*/yarn.lock
                       ${{ env.MERGE_COMMIT_BRANCH_DIR }}/yarn.lock
+                      ${{ env.MERGE_COMMIT_BRANCH_DIR }}/*/yarn.lock
 
             - uses: actions/cache@v3
               id: npm-cache (for the ${{ env.TEMPLATE_APP_LOCK_FILE_PATH }})
